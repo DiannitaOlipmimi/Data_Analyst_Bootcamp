@@ -69,4 +69,51 @@ ORDER BY AGE DESC
 
 ## 📑SQL Intermediate
 
+<details>
+
+**Part 1** | [Youtube](https://youtu.be/9URM1_2S0ho)
+
+- INNER OUTER JOIN 
+
+example:
+
+**Part 2** | [Youtube](https://youtu.be/lYKkro6rKm0)
+
+- UNION and UNION operator
+
+example:
+
+
+**Part 3** | [Youtube](https://youtu.be/Twusw__OzA8)
+
+- CASE statment
+
+example:
+
+**Part 4** | [Youtube](https://youtu.be/tYBOMw7Ob8E)
+
+- HAVING clause
+
+example:
+
+**Part 5** | [Youtube](https://youtu.be/bhnrIforc7s)
+
+- UPDATE and DELETE data
+
+example:
+
+**Part 6** | [Youtube](https://youtu.be/Dk7he_yEs4U)
+
+- Aliasing
+
+example:
+
+**Part 7** | [Youtube](https://youtu.be/D6XNlTfglW4)
+
+- PARTITION BY
+
+example:
+
+</details>
+
 ## 📑SQL Advance
