@@ -178,3 +178,57 @@ JOIN EmployeeSalary Sal
 </details>
 
 ## 📑SQL Advance
+
+<details>
+
+**Part 1** | [Youtube](https://youtu.be/K1WeoKxLZ5o)
+
+- CTE (Common Table Expression)
+
+example:
+
+```sql
+
+```
+
+**Part 2** | [Youtube](https://youtu.be/RF0LE3hYFrI)
+
+- Create Temporary table
+
+example:
+
+```sql
+
+```
+
+**Part 3** | [Youtube](https://youtu.be/GQj6_6V_jVA)
+
+- String function 
+
+example:
+
+```sql
+
+```
+
+**Part 4** | [Youtube](https://youtu.be/NrBJmtD0kEw)
+
+- Stored Procedures
+
+example:
+
+```sql
+
+```
+
+**Part 5** | [Youtube](https://youtu.be/m1KcNV-Zhmc)
+
+- Subqueries
+
+example:
+
+```sql
+
+```
+
+</details>
