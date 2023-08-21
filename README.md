@@ -188,7 +188,16 @@ JOIN EmployeeSalary Sal
 example:
 
 ```sql
-
+WITH CTE_Employee AS 
+(SELECT FirstName, LastName, Gender, Salary,
+COUNT(Gender) OVER (PARTITION BY Gender) AS TotalGender,
+AVG(Salary) OVER (PARTITION BY Gender) AS AvgSalary
+FROM EmployeeDemographics emp
+JOIN EmployeeSalary sal
+	ON emp.EmployeeID = sal.EmployeeID
+WHERE Salary > 45000)
+SELECT FirstName, AvgSalary
+FROM CTE_Employee
 ```
 
 **Part 2** | [Youtube](https://youtu.be/RF0LE3hYFrI)
@@ -198,7 +207,11 @@ example:
 example:
 
 ```sql
-
+CREATE TABLE #temp_Employee (
+EmployeeID int,
+JobTitle Varchar(50),
+Salary int
+)
 ```
 
 **Part 3** | [Youtube](https://youtu.be/GQj6_6V_jVA)
@@ -208,7 +221,14 @@ example:
 example:
 
 ```sql
+Select EmployeeID, TRIM(employeeID) AS IDTRIM
+FROM EmployeeErrors -- get rid of blank space
 
+Select EmployeeID, RTRIM(employeeID) as IDRTRIM
+FROM EmployeeErrors -- get rid of blank space on right side
+
+Select EmployeeID, LTRIM(employeeID) as IDLTRIM
+FROM EmployeeErrors -- get rid of blank space on left side
 ```
 
 **Part 4** | [Youtube](https://youtu.be/NrBJmtD0kEw)
@@ -218,7 +238,12 @@ example:
 example:
 
 ```sql
+CREATE PROCEDURE TEST
+AS
+SELECT * 
+FROM EmployeeDemographics
 
+EXEC TEST
 ```
 
 **Part 5** | [Youtube](https://youtu.be/m1KcNV-Zhmc)
@@ -228,7 +253,11 @@ example:
 example:
 
 ```sql
-
+Select a.EmployeeID, AllAvgSalary
+From 
+	(Select EmployeeID, Salary, AVG(Salary) over () as AllAvgSalary
+	 From EmployeeSalary) a
+Order by a.EmployeeID
 ```
 
 </details>
