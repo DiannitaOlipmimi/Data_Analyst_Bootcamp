@@ -22,17 +22,47 @@ https://youtube.com/playlist?list=PLUaB-1hjhk8FE_XZ87vPPSfHqb6OcM0cF
 - installing SQL Server Management Studio
 - create tables
 
+example:
+```sql
+CREATE TABLE EmployeeSalary
+(EmployeeID int,
+JobTitle Varchar(50),
+Salary int)
+```
+
 [Part 2](https://youtu.be/PyYgERKq25I)
 
 - SELECT and FROM statment
+
+example:
+```sql
+SELECT TOP 5 *
+FROM EmployeeDemographics
+```
 
 [Part 3](https://youtu.be/A9TOuDZTPDU)
 
 - WHERE statment
 
+example:
+```sql
+SELECT *
+FROM EmployeeDemographics
+WHERE FirstName <> 'Jim'
+```
+
 [Part 4](https://youtu.be/LXwfzIRD-Ds)
 
 - GROUP BY and ORDER BY statment
+
+example:
+```sql
+SELECT Age,Gender, COUNT(Gender) AS COUNTGENDER
+FROM EmployeeDemographics
+WHERE Age > 31
+GROUP BY Gender, Age 
+ORDER BY AGE DESC
+```
 
 ## 📑SQL Intermediate
 
