@@ -77,11 +77,26 @@ ORDER BY AGE DESC
 
 example:
 
+```sql
+SELECT *
+FROM EmployeeDemographics
+INNER JOIN EmployeeSalary
+	ON EmployeeDemographics.EmployeeID = EmployeeSalary.EmployeeID 
+```
+
 **Part 2** | [Youtube](https://youtu.be/lYKkro6rKm0)
 
 - UNION and UNION operator
 
 example:
+
+```sql
+SELECT *
+FROM EmployeeDemographics
+UNION ALL
+SELECT *
+FROM WareHouseEmployeeDemographics
+```
 
 
 **Part 3** | [Youtube](https://youtu.be/Twusw__OzA8)
@@ -90,11 +105,36 @@ example:
 
 example:
 
+```sql
+SELECT 
+FirstName,
+LastName,
+Age,
+CASE
+	WHEN Age > 30 THEN 'Old'
+	WHEN Age BETWEEN 27 AND 30 THEN 'Young'
+	ELSE 'Baby'
+END
+FROM EmployeeDemographics
+WHERE Age is NOT NULL
+ORDER BY Age
+```
+
 **Part 4** | [Youtube](https://youtu.be/tYBOMw7Ob8E)
 
 - HAVING clause
 
 example:
+
+```sql
+SELECT JobTitle, AVG(Salary)
+FROM EmployeeDemographics
+JOIN EmployeeSalary
+	ON EmployeeDemographics.EmployeeID = EmployeeSalary.EmployeeID
+GROUP BY JobTitle
+HAVING AVG(Salary) > 45000
+ORDER BY AVG(Salary)
+```
 
 **Part 5** | [Youtube](https://youtu.be/bhnrIforc7s)
 
@@ -102,17 +142,38 @@ example:
 
 example:
 
+```sql
+UPDATE EmployeeDemographics
+SET Age = 31,
+Gender = 'Female'
+WHERE FirstName = 'Holly' AND LastName = 'Flax'
+```
+
 **Part 6** | [Youtube](https://youtu.be/Dk7he_yEs4U)
 
 - Aliasing
 
 example:
 
+```sql
+SELECT AVG(Age) AS AvgAge
+FROM EmployeeDemographics
+```
+
 **Part 7** | [Youtube](https://youtu.be/D6XNlTfglW4)
 
 - PARTITION BY
 
 example:
+
+```sql
+SELECT 
+FirstName, LastName, Gender, Salary,
+COUNT(Gender) OVER (PARTITION BY Gender) AS TotalGender
+FROM EmployeeDemographics Demo
+JOIN EmployeeSalary Sal
+	ON Demo.EmployeeID = Sal.EmployeeID
+```
 
 </details>
 
