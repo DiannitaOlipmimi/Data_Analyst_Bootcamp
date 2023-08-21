@@ -17,7 +17,7 @@ https://youtube.com/playlist?list=PLUaB-1hjhk8FE_XZ87vPPSfHqb6OcM0cF
 
 ## 📑SQL Basic
 
-[Part 1](https://youtu.be/RSlqWnP-Dy8)
+**Part 1** | [Youtube](https://youtu.be/RSlqWnP-Dy8)
 
 - installing SQL Server Management Studio
 - create tables
@@ -30,7 +30,7 @@ JobTitle Varchar(50),
 Salary int)
 ```
 
-[Part 2](https://youtu.be/PyYgERKq25I)
+**Part 2** | [Youtube](https://youtu.be/PyYgERKq25I)
 
 - SELECT and FROM statment
 
@@ -40,7 +40,7 @@ SELECT TOP 5 *
 FROM EmployeeDemographics
 ```
 
-[Part 3](https://youtu.be/A9TOuDZTPDU)
+**Part 3** | [Youtube](https://youtu.be/A9TOuDZTPDU)
 
 - WHERE statment
 
@@ -51,7 +51,7 @@ FROM EmployeeDemographics
 WHERE FirstName <> 'Jim'
 ```
 
-[Part 4](https://youtu.be/LXwfzIRD-Ds)
+**Part 4** | [Youtube](https://youtu.be/LXwfzIRD-Ds)
 
 - GROUP BY and ORDER BY statment
 
