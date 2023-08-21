@@ -16,6 +16,7 @@ https://youtube.com/playlist?list=PLUaB-1hjhk8FE_XZ87vPPSfHqb6OcM0cF
 9. [Portofolio Project Github]()
 
 ## 📑SQL Basic
+<details>
 
 **Part 1** | [Youtube](https://youtu.be/RSlqWnP-Dy8)
 
@@ -63,6 +64,8 @@ WHERE Age > 31
 GROUP BY Gender, Age 
 ORDER BY AGE DESC
 ```
+
+</details>
 
 ## 📑SQL Intermediate
 
